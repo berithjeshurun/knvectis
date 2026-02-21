@@ -69,9 +69,6 @@ Execution is handled by:
 
 ```python
 from knvectis import Tree, Branch, Leaf
-from knvectis import KTraverser, KHunter, KEngine
-from knvectis import children_resolver, parent_resolver
-
 # Create tree
 tree = Tree(name="Knowledge Root")
 
@@ -79,17 +76,17 @@ tree = Tree(name="Knowledge Root")
 ai_branch = Branch(name="Artificial Intelligence")
 math_branch = Branch(name="Mathematics")
 
-tree.add(ai_branch)
-tree.add(math_branch)
+tree.add_branch(ai_branch)
+tree.add_branch(math_branch)
 
 # Add leaves
 leaf1 = Leaf(name="Neural Networks", data={"type": "deep learning"})
 leaf2 = Leaf(name="Graph Theory", data={"type": "discrete math"})
 leaf3 = Leaf(name="Reinforcement Learning", data={"type": "machine learning"})
 
-ai_branch.add(leaf1)
-ai_branch.add(leaf3)
-math_branch.add(leaf2)
+ai_branch.add_leaf(leaf1)
+ai_branch.add_leaf(leaf3)
+math_branch.add_leaf(leaf2)
 ```
 
 You now have a structured knowledge hierarchy:
