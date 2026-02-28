@@ -254,5 +254,6 @@ It is designed to serve as a reasoning substrate inside larger AI systems.
 
 ## License
 
-knvectis is licensed under the Apache License 2.0.
+knvectis is licensed under the MIT.
+
 See the LICENSE file for details.
