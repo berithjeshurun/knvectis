@@ -35,7 +35,7 @@ knvectis separates structure from execution:
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/yourusername/knvectis.git
+git clone https://github.com/berithjeshurun/knvectis.git
 cd knvectis
 pip install -e .
 ```
